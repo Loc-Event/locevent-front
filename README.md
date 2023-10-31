@@ -1,5 +1,0 @@
-# locevent-front
-
-kjlfsglsdfgjjfuklhgfshf
-
-test
