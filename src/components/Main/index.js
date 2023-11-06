@@ -5,12 +5,12 @@ import NotFoundPage from 'src/pages/NotFoundPage';
 
 const Main = () => {
     return (
-        <main>
+        <Main>
         <Switch>
             <Route path="/" exact component={IndexPage} />
             <Route component={NotFoundPage} />
         </Switch>
-        </main>
+        </Main>
     );
 };
 

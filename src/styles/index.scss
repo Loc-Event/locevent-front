@@ -3,17 +3,38 @@
 @import "~bootstrap/scss/bootstrap";
 
 body {
-  font-family: sans-serif;
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #dbdbdb;
+  background-color: #333333;
 }
 
-/* 
-  // or you can import your own font
-  @font-face {
-    font-family: 'Roboto';
-    src: url('../assets/fonts/Roboto-Regular.ttf');
-  }
+h1,
+h2,
+h3,
+h4{
+  margin: 0;
+}
 
-  body {
-    font-family: 'Roboto', sans-serif;
-  }
-*/
+*{
+  box-sizing: border-box;
+}
+ul{
+  list-style: none;
+  padding-left: 0px;
+  margin: 0;
+}
+
+img{
+  max-width: 100%;
+}
+
+input{
+  font-family: var(--font-family);
+}
+
+::placeholder{
+  font-size: var(--font-family);
+}
