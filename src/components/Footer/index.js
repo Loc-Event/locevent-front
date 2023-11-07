@@ -3,9 +3,8 @@ import './styles.scss';
 
 const Footer = () => {
     return (
-        <footer >
-         <p className="footer">Copyright © 2023 Loc'Event</p>  
-    
+        <footer>
+            <p>Copyright © 2023 Loc'Event</p>  
         </footer>
     );
 };

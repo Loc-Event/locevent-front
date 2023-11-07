@@ -1,0 +1,65 @@
+@use '../../styles/mixins' as mixin;
+
+header{
+    height: 15%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px 20px;
+    // height: 70px;
+    background-color: rgb(0, 0, 0);
+    box-shadow:rgb(0,0,0,22%) 0px 2px 18px 0px;;
+    color: #E48F49;
+    img{
+        width: 100px;
+    }
+}
+.logo{
+    flex: 1 1 auto;
+}
+
+.header-menu{
+    @include mixin.xs{
+        display: none;
+    }
+}
+.header-btn{
+    background-color: #ffbb00; 
+    color: #fff; 
+    border-radius: 5px; 
+    padding: 10px 25px;
+    margin: 8px;
+    font-size: 14px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /*Au survol*/
+    &:hover {
+      background-color: #d88585;
+    }
+  
+    /*Au clic*/
+    &:active {
+      background-color: #969896;
+    }
+}
+
+.headerXs{
+    display: none !important;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    &:hover{
+        opacity: 0.8;
+    }
+    @include mixin.xs {
+        display: block !important;
+    }
+}
+
+.calc{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+  }

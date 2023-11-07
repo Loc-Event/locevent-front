@@ -1,9 +1,16 @@
-.app {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
+// .app {
+//   min-height: 100vh;
+//   display: flex;
+//   flex-direction: column;
+// }
 
-.app img {
-  max-width: 150px;
+// .app img {
+//   max-width: 150px;
+// }
+
+.appContainer{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-flow: column;
 }
