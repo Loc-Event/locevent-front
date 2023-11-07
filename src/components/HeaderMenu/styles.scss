@@ -1,0 +1,21 @@
+.MenuContainer{
+    position: absolute;
+    top: 68px;
+    right: 10px;
+    width: 200px;
+    padding: 70px 40px;
+    background-color: #000000;
+    li{
+        text-decoration-color: #e48f49;
+        padding: 10px 15px;
+        cursor: pointer;
+        border-radius: 15px;
+        color: rgb(255, 255, 255);
+       // transition: background-color 0.2s, color 0.2s;
+        &:hover {
+            background-color: #e48f49;
+            color: rgb(255, 255, 255);
+        }
+    }
+    
+}
