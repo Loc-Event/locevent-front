@@ -13,16 +13,22 @@ const Header = () => {
     const handleInscriptionClick = () => {
         history.push('/inscription')
     }
+    const handleConnexionClick = () => {
+        history.push('/connexion')
+    }
+    const handleLogoClick = () => {
+        history.push('/')
+    }
 
     return (
         <>
          <header>
             <div className="logo">
-                   <img src={logo} alt="loc'event" />
+                   <img onClick={ handleLogoClick } src={logo} alt="loc'event" />
             </div>
             <ul className="header-menu">
-                <button type="button" onClick={ handleInscriptionClick } className="header-btn">Inscription</button>
-                <button type="button" className="header-btn">Connexion</button>
+                <button type="button" onClick={ handleInscriptionClick } className="header-btn">S'inscrire</button>
+                <button type="button" onClick={ handleConnexionClick } className="header-btn">Se connecter</button>
             </ul>
                 <i onClick={() => setShowMenu(true)} className={`fa-solid fa-bars fa-lg headerXs`}></i>
             {showMenu && (
