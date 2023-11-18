@@ -1,14 +1,14 @@
 @use '../../styles/mixins' as mixin;
 
-
-.container {
+.form-login {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 100%;
   }
   
-.div-login {
+.ul-login {
   display: flex;
   flex-direction: column;
   justify-content: space-between;

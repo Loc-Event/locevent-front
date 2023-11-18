@@ -5,9 +5,9 @@ import './style.scss';
 const ConnexionPage = () => {
     return (
     <>
-    <form className='container'>
+    <form className='form-login'>
         <h3>Se connecter </h3>
-            <ul className="div-login">
+            <ul className="ul-login">
                 <li>
                     <label htmlFor="">Email</label>
                     <input type="email" name="email" placeholder="email"/>
