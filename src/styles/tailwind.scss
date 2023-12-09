@@ -1,0 +1,23 @@
+// Import des fichiers nécessaires de Tailwind CSS
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+// // Définition de variables globales ou mixins
+// $primary-color: #3498db;
+
+// // Styles spécifiques à l'application
+// body {
+//   font-family: 'Roboto', sans-serif;
+//   background-color: #f8f8f8;
+// }
+
+// .container {
+//   max-width: 1200px;
+//   margin: 0 auto;
+// }
+
+// // Styles spécifiques à tes boutons
+// .my-custom-button {
+//     @apply bg-blue-500 text-white font-bold py-2 px-4 rounded; // Applique des classes Tailwind
+//   }

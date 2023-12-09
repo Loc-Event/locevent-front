@@ -10,22 +10,26 @@ module.exports = merge(common, {
   devtool: 'inline-source-map',
   module: {
     rules: [
-      // Styles
+      // ... autres règles existantes
+  
+      // Nouvelle règle pour les fichiers SCSS avec Tailwind et PostCSS
       {
-        test: /\.(s?css)$/,
+        test: /\.s[ac]ss$/i,
         use: [
           'style-loader',
-          {
-            loader: 'css-loader',
-            options: {
-              sourceMap: true,
-              importLoaders: 2,
-            },
-          },
+          'css-loader',
           {
             loader: 'postcss-loader',
             options: {
               sourceMap: true,
+              // Ici, tu ajoutes les plugins nécessaires pour Tailwind et Autoprefixer
+              postcssOptions: {
+                plugins: [
+                  require('tailwindcss'),
+                  require('autoprefixer'),
+                  // D'autres plugins PostCSS si nécessaire
+                ],
+              },
             },
           },
           {
